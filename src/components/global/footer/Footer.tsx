@@ -16,7 +16,7 @@ export default function Footer({}: Props) {
                         alt="Footer Icon"
                         src="/assets/FooterIcon.svg"
                     />
-                    <p className="mt-2">&copy; 2024 Shark Wow. All rights reserved.</p>
+                    <p className="mt-2">&copy; 2024 Shark Funding. All rights reserved.</p>
                 </div>
             </footer>
         </section>

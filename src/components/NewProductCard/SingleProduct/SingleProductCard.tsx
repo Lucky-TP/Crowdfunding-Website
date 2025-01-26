@@ -79,7 +79,7 @@ const SingleprojectCard = ({ project, showEditProject }: ProjectCardProps) => {
                             ) : (
                                 <Image
                                     className="pl-20 w-3/4 h-full object-contain"
-                                    src="/assets/SharkwowLogo.png"
+                                    src="/assets/SharkLogo.png"
                                     alt={project.projectId}
                                     width={400}
                                     height={400}

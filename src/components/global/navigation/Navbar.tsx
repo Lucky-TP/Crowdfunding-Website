@@ -78,8 +78,8 @@ export default function Navbar({}: Props) {
                     <div className="flex items-center justify-center">
                         <Link href="/">
                             <Image
-                                src="/assets/SharkwowLogo.png"
-                                alt="SharkWow Logo"
+                                src="/assets/SharkLogo.png"
+                                alt="Shark Logo"
                                 width={200}
                                 height={200}
                             />
