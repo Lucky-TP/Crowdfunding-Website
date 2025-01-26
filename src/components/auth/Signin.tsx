@@ -13,6 +13,7 @@ export default function Signin({}: Props) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState<boolean>(false);
+    const [error, setError] = useState<string | null>(null);
 
     const onSignInWithGoogle = async () => {
         setLoading(true);
@@ -49,6 +50,7 @@ export default function Signin({}: Props) {
             await signInWithEmail(payload);
             router.push("/profile");
         } catch (error: any) {
+            setError("Invalid email or password. Please try again."); // Set the error message
             console.log(error);
         }
     };
@@ -64,7 +66,7 @@ export default function Signin({}: Props) {
                     <Link href="/">
                         <Image
                             src="/assets/shark.png"
-                            alt="shark wow img"
+                            alt="shark img"
                             className="absolute top-10 left-14 w-14 h-14 rounded-full"
                             width={56}
                             height={56}
@@ -98,15 +100,8 @@ export default function Signin({}: Props) {
                                         onChange={(e) => setPassword(e.target.value)}
                                     />
                                 </div>
+                                {error && <div className="text-red-500 mb-4">{error}</div>}
                                 <div className="flex flex-row justify-between w-full text-left mb-4">
-                                    <div>
-                                        <a
-                                            href="#"
-                                            className="underline text-orange-300 hover:text-orange-200"
-                                        >
-                                            Forgot your password?
-                                        </a>
-                                    </div>
                                     <div>
                                         <p>
                                             {`Don't have an account? `}
@@ -122,7 +117,7 @@ export default function Signin({}: Props) {
                                 {/* <div className="w-full mt-auto text-center mb-4">
                                     <p className="mb-4 text-sm text-gray-600">
                                         By clicking the Sign In button below,
-                                        you agree to the Shark wow{" "}
+                                        you agree to the Shark{" "}
                                         <a
                                             href="#"
                                             className="underline text-orange-300 hover:text-orange-200"

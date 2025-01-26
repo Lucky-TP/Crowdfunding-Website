@@ -6,7 +6,7 @@ import Layout from "src/components/global/Layout";
 import SessionWrapper from "src/components/global/SessionWrapper";
 
 export const metadata: Metadata = {
-    title: "Shark WoW",
+    title: "Shark",
     description: "Funding for Startup and SMEs",
 };
 
