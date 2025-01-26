@@ -57,13 +57,13 @@ export default function Signup({}: Props) {
                     <Link href="/">
                         <img
                             src="./assets/shark.png"
-                            alt="shark wow img"
+                            alt="shark Funding img"
                             className="absolute top-10 left-14 w-14 h-14 rounded-full"
                         />
                     </Link>
                     <div className="fixed top-20">
-                        <p className="text-white mb-5 mt-20">Welcome to Shark Wow</p>
-                        <h1 className="text-white text-4xl font-medium">Sign up to Shark Wow</h1>
+                        <p className="text-white mb-5 mt-20">Welcome to Shark Funding</p>
+                        <h1 className="text-white text-4xl font-medium">Sign up to Shark Funding</h1>
                     </div>
                 </div>
                 <div className="w-full flex flex-col justify-center items-center bg-white p-16 rounded-tl-4xl">

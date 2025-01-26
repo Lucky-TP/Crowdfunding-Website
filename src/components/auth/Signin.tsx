@@ -72,7 +72,7 @@ export default function Signin({}: Props) {
                     </Link>
                     <div className="fixed top-20">
                         <p className="text-white mb-5 mt-20">Welcome back</p>
-                        <h1 className="text-white text-4xl font-medium">Sign in to Shark Wow</h1>
+                        <h1 className="text-white text-4xl font-medium">Sign in to Shark Funding</h1>
                     </div>
                 </div>
                 <div className="w-full flex flex-col justify-center items-center bg-white p-16 rounded-tl-4xl">

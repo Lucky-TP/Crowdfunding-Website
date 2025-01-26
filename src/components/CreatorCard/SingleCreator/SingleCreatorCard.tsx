@@ -29,7 +29,7 @@ const SingleCreatorCard = ({ creator }: CreatorCardProps) => {
                         )}
                         <Image
                             className="w-full h-full object-contain" // Ensure the image fits within the container without cropping
-                            src={`${creator.profileImageUrl}`}
+                            src={creator.profileImageUrl?.trim() || '/nuk.jpg'}
                             alt={`${creator.firstName} ${creator.lastName}'s profile picture`}
                             width={400}
                             height={400}
